@@ -29,7 +29,7 @@
     UITouch *myTouch = [[touches allObjects] objectAtIndex: 0];
     CGPoint currentPos = [myTouch locationInNode:self];
 
-    if (currentPos.x >= 80 && currentPos.x <=240 && currentPos.y <= 80 && currentPos.y >=20)
+    if (currentPos.x >= 80 && currentPos.x <=240 && currentPos.y <= 125 && currentPos.y >=65)
     {
         SKScene *myScene = [[MyScene alloc]initWithSize:self.size];
         SKTransition *reveal = [SKTransition doorwayWithDuration:0.5];
